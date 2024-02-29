@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="testCase.TC_003_ReadyToTransformTest">
+        <methods>
+          <include name="validate_department"/>
+          <include name="verify_products"/>
+          <include name="tearDown"/>
+          <include name="verify_enterprise_page"/>
+          <include name="validate_job_role"/>
+          <include name="validate_input"/>
+          <include name="validate_country"/>
+          <include name="validate_institution_name"/>
+          <include name="validate_first_name"/>
+          <include name="validate_description"/>
+          <include name="validate_campus_page"/>
+          <include name="setUp"/>
+          <include name="verify_coursera_page"/>
+          <include name="validate_institution_type"/>
+          <include name="validate_last_name"/>
+        </methods>
+      </class> <!-- testCase.TC_003_ReadyToTransformTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

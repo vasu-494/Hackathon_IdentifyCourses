@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utilities.ExtentReport"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="CHROME(failed)" verbose="0">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCase.TC_003_ReadyToTransformTest">
+        <methods>
+          <include name="validate_department"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCase.TC_003_ReadyToTransformTest -->
+    </classes>
+  </test> <!-- CHROME(failed) -->
+</suite> <!-- Failed suite [Suite] -->

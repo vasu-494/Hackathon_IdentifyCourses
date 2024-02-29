@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.ExtentReport"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="CHROME(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCase.TC_001_WebDevelopmentTest">
+        <methods>
+          <include name="validate_course_search"/>
+          <include name="validate_home_page"/>
+          <include name="validate_course2"/>
+          <include name="validate_course1"/>
+          <include name="validate_language"/>
+          <include name="validate_level"/>
+        </methods>
+      </class> <!-- testCase.TC_001_WebDevelopmentTest -->
+      <class name="testCase.TC_003_ReadyToTransformTest">
+        <methods>
+          <include name="validate_department"/>
+          <include name="validate_country"/>
+          <include name="validate_institution_name"/>
+          <include name="validate_first_name"/>
+          <include name="verify_products"/>
+          <include name="verify_enterprise_page"/>
+          <include name="validate_description"/>
+          <include name="validate_input" invocation-numbers="0 1 2"/>
+          <include name="validate_job_role"/>
+          <include name="validate_campus_page"/>
+          <include name="verify_coursera_page"/>
+          <include name="validate_institution_type"/>
+          <include name="validate_last_name"/>
+        </methods>
+      </class> <!-- testCase.TC_003_ReadyToTransformTest -->
+      <class name="testCase.TC_002_LanguageLearningTest">
+        <methods>
+          <include name="validate_language_learning_search"/>
+          <include name="validate_level"/>
+          <include name="validate_language"/>
+        </methods>
+      </class> <!-- testCase.TC_002_LanguageLearningTest -->
+    </classes>
+  </test> <!-- CHROME(failed) -->
+</suite> <!-- Failed suite [Suite] -->
